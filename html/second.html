@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        LAB 3
+    </title>
+    <link rel="stylesheet" type="text/css" href="../css/second.css">
+    <script type="text/javascript" src="../js/forms.js"></script>
+</head>
+<body>
+    <div class="header-bg"></div>
+    <header>
+        МЕРОПРИЯТИЯ
+    </header>
+    <div class="center">
+        <div class="article">
+            <p class="results">Результаты опроса</p>
+            <table>
+                <script lang="javascript" type="text/javascript">
+                    document.write("<tr><td>№</td>");
+                    document.write("<td>Имя</td>");
+                    document.write("<td>Дата</td>");
+                    document.write("<td>Музыка</td>");
+                    document.write("<td>Mail</td>");
+            
+                    var len = sessionStorage.length;
+                    for (let i = 0; i < len; i++) {
+                        const data = JSON.parse(sessionStorage.getItem(sessionStorage.key(i)));
+                        document.write("<tr><td>" + (i + 1) + "</td>");
+                        document.write("<td>" + data.name + "</td>");
+                        document.write("<td>" + data.date + "</td>");
+                        document.write("<td>" + data.music + "</td>");
+                        document.write("<td>" + data.email + "</td>");
+                    }
+                </script>
+            </table>
+        </div>
+        <div class="nav">
+<br><br><br><br>
+            <a href="index.html">Главная</a><br><br>
+            <a href="second.html">Результаты</a>
+        </div>
+        <div class="aside">
+            
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

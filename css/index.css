@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-bg {
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    opacity: 40%;
+    background: url(../resources/house.png);
+    background-size: 100%;
+}
+
+header {
+    width: 100%;
+    height: 20%;
+    position: relative;
+    font-size: 6em;
+    text-align: right;
+}
+
+footer {
+    width: 100%;
+    height: 20%;
+    background-color: lightgray;
+}
+
+.center {
+    width: 100%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.article {
+    height: 100%;
+    width: 70%;
+    background-color: azure;
+    font-size: 18px;
+    border-radius:20px;
+}
+
+.nav {
+    height: 100%;
+    width: 15%;
+    background-color: lightslategray;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 0;
+    border-radius: 20px;
+
+}
+
+.aside {
+    height: 100%;
+    width: 15%;
+    background-color: gray;
+    margin-left: 1px;
+    border-radius: 20px;
+
+}
+
+fieldset {
+    margin-top: 40px;
+    width: 50%;
+    height: 40%;
+    padding: 25px;
+margin: 75px;
+}
+
+.article-top-text {
+    margin-left: 50px;
+    font-size: 24px;
+    font-style: italic;
+}
+
+legend {
+    margin-left: 50px;
+}
